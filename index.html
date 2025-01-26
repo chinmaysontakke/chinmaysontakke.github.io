@@ -48,26 +48,77 @@
   </section>
 
   <!-- About Section -->
- <section id="about">
-    <div class="container">
-        <h2 class="text-center mb-4">About Me</h2>
-        <div class="row align-items-center">
-            <div class="col-md-4 text-center">
-                <img src="images/bg-1.png" alt="Chinmay" class="img-fluid rounded-circle">
-            </div>
-            <div class="col-md-8">
-                <p>
-                    I am a passionate professional specializing in cybersecurity, business analysis, and DevOps. 
-                    My mission is to bridge the gap between technology and business through efficient solutions and innovation.
-                </p>
-                <ul>
-                    <li><strong>Name:</strong> Chinmay Sontakke</li>
-                    <li><strong>Age:</strong> 23</li>
-                    <li><strong>Domain Expertise:</strong> Cybersecurity, DevOps, Business Analysis</li>
-                </ul>
-            </div>
+ <section id="about" class="about-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold">About Me</h2>
+    <div class="row align-items-center mb-5">
+      <!-- Profile Card -->
+      <div class="col-lg-4 text-center">
+        <div class="profile-card shadow-lg p-4 rounded">
+          <img src="images/profile.jpg" alt="Chinmay" class="img-fluid rounded-circle mb-3">
+          <h3>Chinmay Sontakke</h3>
+          <p>Cybersecurity | DevOps | Business Analysis</p>
+          <div class="social-icons mt-3">
+            <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="btn btn-outline-success me-2"><i class="fab fa-github"></i></a>
+            <a href="#" class="btn btn-outline-danger me-2"><i class="fab fa-twitter"></i></a>
+          </div>
         </div>
+      </div>
+
+      <!-- About Details -->
+      <div class="col-lg-8">
+        <p class="text-muted mb-4">
+          Hello! I'm a passionate professional specializing in cybersecurity, business analysis, and DevOps. 
+          I thrive on bridging the gap between technology and business through innovation, collaboration, and impactful solutions.
+        </p>
+        <ul class="list-unstyled text-muted">
+          <li><strong>Age:</strong> 23</li>
+          <li><strong>Experience:</strong> 3+ Years</li>
+          <li><strong>Projects Completed:</strong> 25+</li>
+        </ul>
+        <div class="skills mt-4">
+          <h5>My Skills</h5>
+          <div class="progress mb-2">
+            <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;">Cybersecurity (90%)</div>
+          </div>
+          <div class="progress mb-2">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 85%;">DevOps (85%)</div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;">Business Analysis (80%)</div>
+          </div>
+        </div>
+        <button class="btn btn-primary mt-4">Download Resume</button>
+      </div>
     </div>
+
+    <!-- Slider for Quotes -->
+    <div class="quotes-slider">
+      <h3 class="text-center mb-4">What Inspires Me</h3>
+      <div id="quoteCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="text-center fst-italic">"Innovation distinguishes between a leader and a follower." – Steve Jobs</p>
+          </div>
+          <div class="carousel-item">
+            <p class="text-center fst-italic">"Technology is best when it brings people together." – Matt Mullenweg</p>
+          </div>
+          <div class="carousel-item">
+            <p class="text-center fst-italic">"Success is not final, failure is not fatal: It is the courage to continue that counts." – Winston Churchill</p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#quoteCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#quoteCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </section>
 
   <!-- Services Section -->
