@@ -42,78 +42,67 @@
 #contact {
     padding-bottom: 4rem;
 }
-/* About section with background image */
-#about {
-    position: relative;
-    background: url('images/about-bg.jpg') no-repeat center center/cover;
-    color: white;
-    padding: 5rem 0;
-    overflow: hidden;
+/* About Section Styling */
+.about-section {
+  background: linear-gradient(to bottom, #ffffff, #f3f4f6);
+  color: #333;
 }
 
-/* Overlay to enhance text readability */
-#about::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Transparent black overlay */
-    z-index: 1;
+/* Profile Card */
+.profile-card {
+  background: #ffffff;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.profile-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.profile-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.profile-card p {
+  font-size: 1rem;
+  color: #666;
 }
 
-/* Content container styling */
-#about .container {
-    position: relative;
-    z-index: 2; /* Places content above the overlay */
+/* Social Icons */
+.social-icons .btn {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: transform 0.2s, color 0.2s;
+}
+.social-icons .btn:hover {
+  transform: scale(1.1);
 }
 
-/* Profile image styling */
-#about img {
-    border: 4px solid white;
-    border-radius: 50%;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+/* Skills */
+.progress {
+  height: 1rem;
+}
+.progress-bar {
+  font-size: 0.9rem;
+  line-height: 1rem;
 }
 
-/* Styling for the text and list */
-#about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+/* Quotes Slider */
+.quotes-slider {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
-#about p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
+.carousel-inner p {
+  font-size: 1.2rem;
+  color: #555;
 }
-#about ul {
-    list-style: none;
-    padding: 0;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #333;
+  border-radius: 50%;
 }
-#about ul li {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-#about ul li strong {
-    color: #00ff00; /* Highlight color */
-}
-
-/* Additional responsive adjustments */
-@media (max-width: 768px) {
-    #about img {
-        margin-bottom: 1.5rem;
-    }
-    #about h2 {
-        font-size: 2rem;
-    }
-    #about p,
-    #about ul li {
-        font-size: 1rem;
-    }
-}
-
 
 /* services section css */
 .servicesText.card {
