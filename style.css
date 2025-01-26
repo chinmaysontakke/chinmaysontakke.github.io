@@ -3,14 +3,21 @@
     background-color: black;
 }
 
-/* hero background image */
-.bgimage {
-    height:100vh;
-    background: url('images/BG-Video-6.mp4');
-    background-size:cover;
-    position:relative;
+/* hero background video container */
+.bgvideo {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
-/* text css above hero image*/
+
+/* video styling */
+.bgvideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* text css above hero video */
 .hero_title {
     font-size: 4.5rem;
 }
@@ -24,6 +31,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    z-index: 2; /* Ensure it appears above the video */
 }
 
 /* spacing on all sections */
