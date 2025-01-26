@@ -87,22 +87,50 @@
   line-height: 1rem;
 }
 
-/* Quotes Slider */
+/* Quotes Slider Section Styling */
 .quotes-slider {
-  background: #ffffff;
-  padding: 2rem;
+  position: relative;
+  background: url('images/quotes-bg.jpg') no-repeat center center/cover;
+  padding: 4rem 2rem;
+  color: white;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
-.carousel-inner p {
+
+/* Overlay Effect for Readability */
+.quotes-slider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: -1;
+}
+
+/* Text Styling */
+.quotes-slider h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f3f3f3;
+}
+
+.quotes-slider p {
   font-size: 1.2rem;
-  color: #555;
+  color: #f3f3f3;
 }
+
+/* Carousel Controls */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #333;
+  background-color: white;
   border-radius: 50%;
+  padding: 5px;
 }
+
 
 /* services section css */
 .servicesText.card {
